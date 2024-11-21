@@ -66,7 +66,7 @@
       <section class="main-section">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
-          <button class="button-main" type="button">Order Service</button>
+          <button class="button-main" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Services Section -->
@@ -561,95 +561,111 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+
+    <!--Overlay-section-->
+
+    <div class="modal-overlay " data-modal> 
       <div class="modal">
-        <div>
-          <button type="button" class="btn-close"> <svg class="footer-img-svg" width="8" height="8">
+        <button type="button" class="btn-close" data-modal-close>
+          <svg class="btn-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-          <h4 class="title-model-overlay">
-            Leave your contacts and we will call you back
-          </h4>
-          <ul>
-            <li class="item-modal-overlay">
-              <lybel>
-                <p class="text-model-overlay">Name</p>
-              </lybel>
-              <div class="modal-countainer">
+        <p class="title-model-overlay">Leave your contacts and we will call you back</p>
+        <form>
+          <!-- Name Input -->
+          <div class="item-modal-overlay">
+            <label class="lyble-overlay" for="user-name">Name</label>
+            <div class="modal-container">
               <input
                 class="input-modal-overlay"
                 type="text"
-                name="username"
+                name="user-name"
+                id="user-name"
+              
                 required
-              >
-              <svg width="18" height="18" class="modal-icon">
+              />
+              <svg width="18" height="24" class="modal-icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
-            </li>
-            <li class="item-modal-overlay">
-              <lybel>
-                <p class="text-model-overlay">Phone</p>
-              </lybel>
-              <div  class="modal-countainer">
+          </div>
+    
+          <!-- Phone Input -->
+          <div class="item-modal-overlay">
+            <label class="lyble-overlay" for="phone">Phone</label>
+            <div class="modal-container">
               <input
                 class="input-modal-overlay"
-                type="text"
+                type="tel"
                 name="phone"
+                id="phone"
+             
                 required
-              >
-              <svg  width="18" height="24" class="modal-icon">
+              />
+              <svg width="18" height="24" class="modal-icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-            </li>
-            <li class="item-modal-overlay">
-              <lybel>
-                <p class="text-model-overlay">Email</p>
-              </lybel>
-              <div  class="modal-countainer">
+          </div>
+    
+          <!-- Email Input -->
+          <div class="item-modal-overlay">
+            <label class="lyble-overlay" for="email">Email</label>
+            <div class="modal-container">
               <input
                 class="input-modal-overlay"
-                type="text"
+                type="email"
                 name="email"
+                id="email"
+          
                 required
-              >
-              <svg  width="18" height="24" class="modal-icon">
+              />
+              <svg width="18" height="24" class="modal-icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-            </li>
-            <li class="item-modal-overlay">
-              <div>
-              <lybel>
-                <p class="text-model-overlay">Comment</p>
-              </lybel>
-              <div>
-              <input
-                class="input-modal-overlay-comment"
-                type="text"
-                name="comment"
-                required
-                placeholder="Text input"
-              />
-            </div>
-            </li>
-            <li >
-              <div class="form-filed">
-            <input type="checkbox" name="Private-Police" value="pp" id="pp" class="input-checkbox">
-            <lyble   for="pp" class="text-checkbox">
-             I accept the terms and conditions of the Privacy Policy
-            </lyble>
           </div>
-          </li>
-          <li>
-               <button type="button" class="btn-modal-overlay" >Send</button>
-              </li>
-          </ul>
- 
-  
+    
+          <!-- Comment Input -->
+          <div class="item-modal-overlay">
+            <label class="lyble-overlay" for="user-comment">Comment</label>
+            <div  class="modal-container">
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text Input"
+              class="text-input-holder"
+            ></textarea>
+          </div>
+          </div>
+    
+          <!-- Checkbox -->
+          <div class="form-field">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              class="input-checkbox visually-hidden"
+              value="true"
+              required
+            />
+            <label for="user-privacy" class="text-checkbox">
+              <span class="overlay-span">
+                <svg width="10" height="8" class="svg-icon">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              <span class="text-overlay-checbox"> I accept the terms and conditions of the
+              <a href="" class="link-policy">Privacy Policy</a></span> 
+            </label>
+          </div>
+    
+          <!-- Submit Button -->
+          <button type="submit" class="btn-modal-overlay">Send</button>
+        </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
