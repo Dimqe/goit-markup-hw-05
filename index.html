@@ -66,7 +66,9 @@
       <section class="main-section">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
-          <button class="button-main" type="button" data-modal-open>Order Service</button>
+          <button class="button-main" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Services Section -->
@@ -559,19 +561,40 @@
             </li>
           </ul>
         </div>
+        <div class="email-footer">
+          <p class="from-title">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="input-label">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="input-email"
+              />
+            </label>
+            <button type="submit" class="btn-submit">
+              Subscribe
+              <svg class="btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!--Overlay-section-->
 
-    <div class="modal-overlay " data-modal> 
+    <div class="modal-overlay" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
           <svg class="btn-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="title-model-overlay">Leave your contacts and we will call you back</p>
+        <p class="title-model-overlay">
+          Leave your contacts and we will call you back
+        </p>
         <form>
           <!-- Name Input -->
           <div class="item-modal-overlay">
@@ -582,7 +605,6 @@
                 type="text"
                 name="user-name"
                 id="user-name"
-              
                 required
               />
               <svg width="18" height="24" class="modal-icon">
@@ -590,7 +612,7 @@
               </svg>
             </div>
           </div>
-    
+
           <!-- Phone Input -->
           <div class="item-modal-overlay">
             <label class="lyble-overlay" for="phone">Phone</label>
@@ -600,7 +622,6 @@
                 type="tel"
                 name="phone"
                 id="phone"
-             
                 required
               />
               <svg width="18" height="24" class="modal-icon">
@@ -608,7 +629,7 @@
               </svg>
             </div>
           </div>
-    
+
           <!-- Email Input -->
           <div class="item-modal-overlay">
             <label class="lyble-overlay" for="email">Email</label>
@@ -618,7 +639,6 @@
                 type="email"
                 name="email"
                 id="email"
-          
                 required
               />
               <svg width="18" height="24" class="modal-icon">
@@ -626,20 +646,19 @@
               </svg>
             </div>
           </div>
-    
+
           <!-- Comment Input -->
           <div class="comment-overlay">
             <label class="lyble-overlay" for="user-comment">Comment</label>
-            
+
             <textarea
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
               class="text-input-holder"
             ></textarea>
-       
           </div>
-    
+
           <!-- Checkbox -->
           <div class="form-field">
             <input
@@ -651,18 +670,16 @@
               required
             />
             <label for="user-privacy" class="text-checkbox">
-              
               <span class="overlay-span">
                 <svg width="10" height="8" class="svg-icon">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="" class="link-policy">Privacy Policy</a> 
-            
+              <a href="" class="link-policy">Privacy Policy</a>
             </label>
           </div>
-    
+
           <!-- Submit Button -->
           <button type="submit" class="btn-modal-overlay">Send</button>
         </form>

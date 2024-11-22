@@ -456,6 +456,65 @@ p {
   justify-content: center;
 }
 
+.email-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.subscribe-form{
+  display: flex;
+  gap: 24px;
+  margin-left: 80px;
+}
+
+.input-email{
+ width: 264px;
+ height: 40px;
+ border: 1px solid #ffffff; 
+ background-color: transparent;
+ letter-spacing: 0.04em;
+ line-height: 2;
+ font-size: 12px;
+ padding-left: 16px;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ border-radius: 4px;
+ color: #ffffff;
+}
+.from-title{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+  margin-left: 80px;
+}
+
+.input-email::placeholder{
+  color: #ffffff ;
+}
+
+.btn-submit{
+  font-family: "Roboto", sans-serif;
+  min-width: 165px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color:#ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4d5ae5;
+}
+
+.btn-icon{
+  margin-left: 16px; 
+  fill: #ffffff;
+}
 .team-link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -600,11 +659,16 @@ p {
               border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .bth-close:focus,
+
 .modal .btn-close:hover {
   background-color: #404bbf;
   border: none;
 }
+.modal .bth-close:focus{
+  background-color: #404bbf;
+  border: none;
+}
+
 .btn-close:focus svg{
   fill: #ffffff;
 }
