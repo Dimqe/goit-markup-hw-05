@@ -660,11 +660,11 @@ p {
 }
 
 
-.modal .btn-close:hover {
+.btn-close:hover {
   background-color: #404bbf;
   border: none;
 }
-.modal .bth-close:focus{
+.bth-close:focus{
   background-color: #404bbf;
   border: none;
 }
